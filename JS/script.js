@@ -17,10 +17,10 @@ const app = new Vue({
             }
         ],
         newTodo: '',
-        methods: {
-            addTodo(){
-                console.log('ADD new click');
-            }
+    },
+    methods: {
+        addTodo(){
+            console.log('ADD new click');
         }
-    }
+    },
 });

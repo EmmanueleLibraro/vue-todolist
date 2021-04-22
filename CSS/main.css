@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #000;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* HEADER */
+.app-header{
+margin: 30px 0;
+text-align: center;
+}
+
+/* NUOVO TO DO */
+.new-todo{
+    display: flex;;
+}
+
+.new-todo input,
+.new-todo button{
+    height: 35px;
+    border: 0;
+    outline: none;
+}
+
+.new-todo input{
+    flex-grow: 1;
+    margin-right: 20px;
+    border-bottom: 1px solid #ccc;
+    transition: border .3s;
+    transition: background .3s;
+    background: #000;
+}
+
+
+.new-todo input:hover,
+.new-todo input:focus{
+    background: #ccc;
+    border-color: #000;
+}
+
+.new-todo button{
+    padding: 0 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: #ccc;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.new-todo button:hover,
+.new-todo button:focus{
+    background: #fff;
+}
+
+/* TO DO LIST */
+.todos-container{
+    margin: 40px 0;
+    padding: 15px 30px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px -10px rgba(255, 255, 255, .6);
+}
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.todo:last-child{
+    border-bottom: none;
+}
+
+.todo i{
+    cursor: pointer;
+}
